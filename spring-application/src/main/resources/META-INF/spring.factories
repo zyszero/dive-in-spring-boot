@@ -1,9 +1,14 @@
 # Initializers
+# ApplicationContextInitializer 实现配置
 org.springframework.context.ApplicationContextInitializer=\
 com.zys.divinspringboot.context.AfterHelloWorldApplicationContextInitializer,\
 com.zys.divinspringboot.context.HelloWorldApplicationContextInitializer
-
 # Application Listeners
+# ApplicationListener 实现配置
 org.springframework.context.ApplicationListener=\
 com.zys.divinspringboot.listener.AfterHelloWorldApplicationListener,\
-com.zys.divinspringboot.listener.HelloWorldApplicationListener
+com.zys.divinspringboot.listener.HelloWorldApplicationListener,\
+com.zys.divinspringboot.listener.BeforeConfigFileApplicationListener
+# SpringApplicationRunListener 实现配置
+org.springframework.boot.SpringApplicationRunListener=\
+com.zys.divinspringboot.run.HelloWorldRunListener
