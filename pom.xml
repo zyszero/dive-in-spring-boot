@@ -11,6 +11,7 @@
         <module>autoconfigure</module>
         <module>spring-application</module>
         <module>spring-webmvc</module>
+        <module>spring-servlet</module>
         <!--<module>overview</module>-->
         <!--<module>spring-divinspringboot</module>-->
         <!--<module>springboot-divinspringboot</module>-->
