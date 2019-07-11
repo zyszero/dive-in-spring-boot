@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
  * @date: 2019/7/3 23:58
  */
 @ControllerAdvice(assignableTypes = HelloWorldController.class)
-public class HelloWroldControllerAdvice {
+public class HelloWorldControllerAdvice {
 
     @ModelAttribute("jsessionId")
     public String jsessionId(@CookieValue("Hm_lvt_1dfa88d0c8571eef2d383070cb3e5ca1") String jsession) {
