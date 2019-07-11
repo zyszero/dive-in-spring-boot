@@ -12,6 +12,8 @@
         <module>spring-application</module>
         <module>spring-webmvc</module>
         <module>spring-servlet</module>
+        <module>springboot-webmvc</module>
+        <module>springboot-view</module>
         <!--<module>overview</module>-->
         <!--<module>spring-divinspringboot</module>-->
         <!--<module>springboot-divinspringboot</module>-->
