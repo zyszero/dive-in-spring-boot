@@ -18,28 +18,28 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--thymeleaf 模块-->
+        <!--templates 模块-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
 
-        <!--&lt;!&ndash;Servlet 3.1 API 依赖&ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>javax.servlet</groupId>-->
-        <!--<artifactId>jstl</artifactId>-->
-        <!--</dependency>-->
+        <!--Servlet 3.1 API 依赖-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
 
-        <!--&lt;!&ndash; Provided &ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.apache.tomcat.embed</groupId>-->
-        <!--<artifactId>tomcat-embed-jasper</artifactId>-->
-        <!--</dependency>-->
+        <!-- Provided -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
 
 
     </dependencies>

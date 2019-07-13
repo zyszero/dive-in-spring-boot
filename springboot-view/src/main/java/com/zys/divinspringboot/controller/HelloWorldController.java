@@ -1,28 +1,33 @@
 package com.zys.divinspringboot.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Hello World {@link Controller}
+ * HelloWorld {@link Controller}
  *
  * @author: zys
- * @date: 2019/6/25 22:10
+ * @date: 2019/7/14 0:04
  */
 @Controller
 public class HelloWorldController {
 
     @RequestMapping("/")
-    public String index(@RequestParam int value) {
-//        model.addAttribute("acceptLanguage", acceptLanguage);
-//        model.addAttribute("jsessionId", jsessionId);
-//        model.addAttribute("message", "Hello,World");
+    public String index(@RequestParam(required = false, defaultValue = "0") int value, Model model) {
         return "index";
     }
 
-//    @ModelAttribute("message")
-//    public String message() {
-//        return "Hello World";
-//    }
+    @GetMapping
+    public String helloWorld() {
+        return "hello-world";
+    }
+
+    @ModelAttribute("message")
+    public String message() {
+        return "hello world";
+    }
 }

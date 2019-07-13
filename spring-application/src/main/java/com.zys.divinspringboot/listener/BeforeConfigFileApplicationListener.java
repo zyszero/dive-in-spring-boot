@@ -21,6 +21,11 @@ public class BeforeConfigFileApplicationListener implements SmartApplicationList
                 || ApplicationPreparedEvent.class.isAssignableFrom(eventType);
     }
 
+    @Override
+    public boolean supportsSourceType(Class<?> sourceType) {
+        return true;
+    }
+
 
     @Override
     public int getOrder() {
