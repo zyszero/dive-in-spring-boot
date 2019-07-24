@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HelloWorldController {
 
-    @RequestMapping("/")
+    @RequestMapping("")
     public String index(@RequestParam(required = false, defaultValue = "0") int value, Model model) {
         return "index";
     }

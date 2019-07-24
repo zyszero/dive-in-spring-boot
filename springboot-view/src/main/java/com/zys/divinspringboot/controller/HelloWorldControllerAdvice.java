@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class HelloWorldControllerAdvice {
 
     @ModelAttribute("jsessionId")
-    public String jsessionId(@CookieValue("Hm_lvt_1dfa88d0c8571eef2d383070cb3e5ca1") String jsession) {
+    public String jsessionId(@CookieValue(value = "Hm_lvt_1dfa88d0c8571eef2d383070cb3e5ca1", required = false) String jsession) {
         return jsession;
     }
 

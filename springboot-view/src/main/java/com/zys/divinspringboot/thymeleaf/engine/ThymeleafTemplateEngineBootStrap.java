@@ -7,8 +7,10 @@ import org.springframework.core.io.ResourceLoader;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 
-import java.io.*;
-import java.nio.charset.StandardCharsets;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 
 /**
  * @author: zys
@@ -31,7 +33,7 @@ public class ThymeleafTemplateEngineBootStrap {
         try (FileInputStream fileInputStream = new FileInputStream(file); ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream()) {
             IOUtils.copy(fileInputStream, byteArrayOutputStream);
             // 模板的内容
-            String content = byteArrayOutputStream.toString(StandardCharsets.UTF_8);
+            String content = byteArrayOutputStream.toString("UTF-8");
             // 渲染（处理）结果
             String result = templateEngine.process(content, context);
             // 输出渲染（处理）结果
