@@ -15,6 +15,7 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.lang.reflect.Type;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
 /**
@@ -56,7 +57,7 @@ public class PropertiesHttpMessageConverter extends AbstractGenericHttpMessageCo
         // 获取字符编码
         Charset charset = contentType.getCharset();
         // 当 charset 不存在时，使用 UTF-8
-        charset = charset == null ? Charset.forName("UTF-8") : charset;
+        charset = charset == null ? StandardCharsets.UTF_8 : charset;
         // 字符流
         InputStreamReader inputStreamReader = new InputStreamReader(inputMessage.getBody(), charset);
         Properties properties = new Properties();
